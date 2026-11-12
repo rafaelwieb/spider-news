@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider News – Contato</title>
+    <link rel="icon" type="image/png" href="./img/logo-site.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-pagina="contato">
+    <header class="topo">
+        <h1>SPIDER NEWS</h1>
+        <p>Tudo sobre o Homem-Aranha</p>
+        <p id="data"></p>
+    </header>
+
+    <nav class="navbar navbar-expand navbar-dark menu-bs">
+        <div class="container-fluid">
+            
+            <div class="collapse navbar-collapse show" id="menu-principal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tobey.html">Tobey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="andrew.html">Andrew</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tom.html">Tom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filme.html">Filme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="viloes.html">Vilões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animacoes.html">Animações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><button id="btn-modo" type="button">Modo escuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid conteudo">
+        <h2>Fale com o Spider News</h2>
+
+        <section class="row g-3">
+            <article class="col-lg-7">
+                <h3 class="mt-0">Envie uma mensagem</h3>
+                <div id="alerta" class="alert alert-success d-none" role="alert"></div>
+                <form id="formulario">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" required minlength="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="voce@exemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone (opcional)</label>
+                        <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(41) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Use o formato (41) 99999-9999">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select id="assunto" name="assunto" class="form-select" required>
+                            <option value="">Escolha um assunto</option>
+                            <option value="Sugestão">Sugestão</option>
+                            <option value="Dúvida">Dúvida</option>
+                            <option value="Elogio">Elogio</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem (mínimo de 10 caracteres)" required minlength="10"></textarea>
+                    </div>
+                    <button id="btn-enviar" type="submit" class="btn btn-danger">Enviar mensagem</button>
+                </form>
+            </article>
+            <aside class="col-lg-5">
+                <div class="card card-body h-100">
+                    <h3 class="mt-0">Mensagens enviadas</h3>
+                    <p id="vazio">Nenhuma mensagem enviada ainda.</p>
+                    <ul id="lista-mensagens" class="list-group mb-3"></ul>
+                    <div><button id="btn-limpar" type="button" class="btn btn-outline-primary btn-sm">Limpar mensagens</button></div>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <section>
+        <div class="col-lg-5" >
+                    <p >Lembresse:</p>
+                <audio class="midia" controls>
+                        <source src="./audio/grandes-poderes-vem-grandes-responsabilidades.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+    </section>
+    <section>
+        <div class="col-lg-5" >
+                    <p >Veja o site do Daily Bugle:</p>
+
+        <li class="nav-item"><a class="nav-link" href="https://www.thedailybugle.net/" target="_blank"rel="noopener">Daily Bugle</a></li>
+        <p></p>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Spider News – trabalho escolar. Homem-Aranha e personagens &copy; Marvel/Sony.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

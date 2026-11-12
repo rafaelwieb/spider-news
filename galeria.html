@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider News – Galeria</title>
+    <link rel="icon" type="image/png" href="./img/logo-site.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #grade-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        #grade-galeria figure { margin: 0; }
+        #grade-galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #111;
+            border-radius: 6px;
+        }
+        #grade-galeria figcaption { text-align: center; font-size: 14px; color: #666; margin-top: 4px; }
+        @media (max-width: 480px) {
+            #grade-galeria { grid-template-columns: repeat(2, 1fr); }
+            #grade-galeria img { height: 140px; }
+        }
+    </style>
+</head>
+
+<body data-pagina="galeria">
+    <header class="topo">
+        <h1>SPIDER NEWS</h1>
+        <p>Tudo sobre o Homem-Aranha</p>
+        <p id="data"></p>
+    </header>
+
+    <nav class="navbar navbar-expand navbar-dark menu-bs">
+        <div class="container-fluid">
+            
+            <div class="collapse navbar-collapse show" id="menu-principal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tobey.html">Tobey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="andrew.html">Andrew</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tom.html">Tom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filme.html">Filme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="viloes.html">Vilões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animacoes.html">Animações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><button id="btn-modo" type="button">Modo escuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="conteudo">
+        <h2>Galeria do Homem-Aranha</h2>
+
+        <section>
+            <p>Uma coleção de imagens do Homem-Aranha pelos céus e prédios de Nova York.</p>
+            <div id="grade-galeria">
+                <figure>
+                    <img src="./img/galeria1.jpeg" alt="De cabeça para baixo sobre o trânsito">
+                    <figcaption>Homem-Aranha de cabeça para baixo sobre o trânsito</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria2.jpeg" alt="Traje detalhado sobre a cidade à noite">
+                    <figcaption>Homem-Aranha com traje detalhado sobre a cidade à noite</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria3.jpeg" alt="Agachado sobre uma van, ao lado do escudo do Capitão América">
+                    <figcaption>Homem-Aranha agachado sobre uma van, ao lado do escudo do Capitão América</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria4.jpeg" alt="Escalando um prédio com a cidade ao fundo">
+                    <figcaption>Homem-Aranha escalando um prédio com a cidade ao fundo</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria5.jpeg" alt="Pronto para saltar entre os arranha-céus">
+                    <figcaption>Homem-Aranha pronto para saltar entre os arranha-céus</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria6.jpeg" alt="Em guarda sobre um poste">
+                    <figcaption>Homem-Aranha em guarda sobre um poste</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria7.jpeg" alt="Pendurado de cabeça para baixo na chuva">
+                    <figcaption>Homem-Aranha pendurado de cabeça para baixo na chuva</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria8.jpeg" alt="Retrato cercado por teias">
+                    <figcaption>Homem-Aranha retrato cercado por teias</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria9.jpeg" alt="Mergulhando sobre a cidade">
+                    <figcaption>Homem-Aranha mergulhando sobre a cidade</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria10.jpeg" alt="Sentado no alto da cidade">
+                    <figcaption>Homem-Aranha sentado no alto da cidade</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria11.jpeg" alt="Selfie do herói sobre a cidade">
+                    <figcaption>Selfie do herói sobre a cidade</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/galeria12.jpeg" alt="Lançando teia entre os prédios">
+                    <figcaption>Homem-Aranha lançando teia entre os prédios</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Spider News – trabalho escolar. Homem-Aranha e personagens &copy; Marvel/Sony.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
